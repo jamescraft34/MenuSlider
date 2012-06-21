@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<me.craftysoft.menuslider.MSFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+
+    
+    <LinearLayout 
+        android:id="@+id/menu_pane" 
+        android:layout_width="match_parent" 
+        android:layout_height="fill_parent"
+        android:orientation="vertical" 
+        android:background="@color/Black">
+
+        <!-- Menu layout here -->
+
+		<include
+        	android:id="@+id/includeMenu"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	layout="@layout/sample_menu" />        
+    
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/content_pane" 
+        android:layout_width="match_parent" 
+        android:layout_height="fill_parent"
+        android:orientation="vertical" 
+        android:background="@color/White" 
+        android:clickable="true">
+    
+       	<!-- Fragments here -->   	
+
+    </LinearLayout>
+    
+</me.craftysoft.menuslider.MSFrameLayout>

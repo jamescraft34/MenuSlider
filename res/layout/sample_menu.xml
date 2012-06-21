@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    	android:text="Sample Menu" />
+    
+    
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_gravity="left" android:layout_marginLeft="20dp">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:padding="10dp">
+            
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/calendar" 
+                android:clickable="true" 
+                android:onClick="@string/MenuClick" 
+                android:tag="me.craftysoft.fragments.SampleCalendarFragment"/>
+                        
+			<ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/note" 
+                android:clickable="true" 
+                android:onClick="@string/MenuClick" 
+                android:tag="me.craftysoft.fragments.SampleNotesFragment"/>
+            
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/address" 
+                android:clickable="true" 
+                android:onClick="@string/MenuClick" 
+                android:tag="me.craftysoft.fragments.SampleAddressFragment"/>
+                        
+			<ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/search" 
+                android:clickable="true" 
+                android:onClick="@string/MenuClick" 
+                android:tag="me.craftysoft.fragments.SampleSearchFragment"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+
+
+</LinearLayout>
